@@ -1,0 +1,25 @@
+.slider .track {
+    -fx-background-color: red;
+    -fx-padding: 8;
+    -fx-background-insets: 0; 
+    -fx-background-radius: 0;
+}
+
+.slider .thumb {
+	-fx-pref-width: 0;
+	-fx-background-color: null;
+	-fx-background-radius: 0;
+}
+
+.progress-bar {
+}
+
+.progress-bar .bar {
+    -fx-background-insets: 0; 
+    -fx-background-radius: 0;
+}
+
+.progress-bar .track {
+	-fx-background-insets: 0;
+	-fx-background-radius: 0;
+}

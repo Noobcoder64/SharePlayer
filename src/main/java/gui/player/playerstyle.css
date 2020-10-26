@@ -1,0 +1,123 @@
+#root {
+	-fx-background-color: #0d0d0d;
+	-fx-padding: 20;
+}
+
+#topPane {
+	-fx-padding: 0 0 20 0;
+	-fx-spacing: 10;
+}
+
+#filePathField {
+	-fx-text-fill: black;
+	-fx-background-color: #e0e0e0;
+	-fx-background-radius: 0;
+	-fx-font-size: 15;
+}
+
+#openButton {
+	-fx-background-color: #141414;
+	-fx-background-radius: 0;
+	-fx-border-color: #e0e0e0;
+	-fx-border-width: 2;
+	-fx-text-fill: #e0e0e0;
+	-fx-font-size: 15;
+	-fx-font-weight: bold;
+}
+
+#openButton:hover {
+	-fx-background-color: #e0e0e0;
+	-fx-text-fill: #141414;
+}
+
+#centerPane {
+}
+
+#playerPane {
+	-fx-background-color: black;
+}
+
+#controlPane {
+	-fx-background-color: #141414;
+}
+
+#timePane {
+	-fx-padding: 5;
+	-fx-spacing: 5;
+}
+
+.timeLabel {
+	-fx-font-family: Arial, Helvetica, sans-serif;
+	-fx-text-fill: #F2F3F4;
+	-fx-font-size: 14;
+}
+
+#buttonsPane {
+	-fx-padding: 10;
+	-fx-spacing: 15;
+}
+
+.playerButton {
+	-fx-background-radius: 0;
+	-fx-background-color: transparent;
+	-fx-background-repeat: no-repeat;
+	-fx-background-position: center;
+	-fx-background-size: 20 20;
+}
+
+#playButton {
+	-fx-background-image: url("play_button.png");
+}
+
+#pauseButton {
+	-fx-background-image: url("pause_button.png");
+}
+
+#stopButton {
+	-fx-background-image: url("stop_button.png");
+}
+
+#fullScreenButton {
+	-fx-background-image: url("fullscreen_button.png");
+}
+
+#seekSlider .track {
+    -fx-background-color: null;
+}
+
+#seekSlider .thumb {
+	-fx-background-color: #1B1B1B;
+	-fx-background-radius: 0;
+	
+	-fx-border-color: #F2F3F4;
+}
+
+#seekProgressBar {
+	-fx-accent: #F2F3F4;
+}
+
+#seekProgressBar .bar {
+	-fx-padding: 5; 
+    -fx-background-insets: 0; 
+    
+    -fx-background-radius: 0;
+}
+
+#seekProgressBar .track {
+	-fx-background-radius: 0;
+	-fx-background-color: #454547;
+	-fx-background-insets: 0;
+}
+
+
+#volumeSlider .track {
+	-fx-background-radius: 0;
+	-fx-background-color: #454547;
+	-fx-background-insets: 0;
+}
+#volumeSlider .thumb {
+	-fx-background-color: #1B1B1B;
+	-fx-background-radius: 0;
+	
+	-fx-border-color: #F2F3F4;
+}

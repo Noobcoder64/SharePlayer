@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Slider?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+
+<BorderPane fx:id="borderPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="logic.player.PlayerTest">
+   <bottom>
+      <HBox prefHeight="47.0" prefWidth="600.0" BorderPane.alignment="CENTER">
+         <children>
+            <Button fx:id="playButton" mnemonicParsing="false" onAction="#onPlayButtonClicked" text="PLAY" />
+            <Button fx:id="pauseButton" mnemonicParsing="false" onAction="#onPauseButtonClicked" text="PAUSE" />
+            <Button fx:id="stopButton" mnemonicParsing="false" onAction="#onStopButtonClicked" text="STOP" />
+            <Slider fx:id="volumeSlider" value="100.0" />
+         </children>
+      </HBox>
+   </bottom>
+   <top>
+      <Slider fx:id="timeSlider" BorderPane.alignment="CENTER" />
+   </top>
+   <right>
+      <VBox prefHeight="200.0" prefWidth="100.0" BorderPane.alignment="CENTER">
+         <children>
+            <TextField fx:id="filePathField" />
+            <Button fx:id="openButton" mnemonicParsing="false" onAction="#onOpenButtonClicked" text="Open" />
+            <HBox prefHeight="30.0" prefWidth="100.0" spacing="10.0">
+               <children>
+                  <Label text="Volume" />
+                  <Label fx:id="volumeLabel" />
+               </children>
+            </HBox>
+            <HBox prefHeight="35.0" prefWidth="100.0" spacing="10.0">
+               <children>
+                  <Label text="Time" />
+                  <Label fx:id="timeLabel" />
+               </children>
+            </HBox>
+            <HBox prefHeight="29.0" prefWidth="100.0" spacing="10.0">
+               <children>
+                  <Label text="Duration" />
+                  <Label fx:id="durationLabel" />
+               </children>
+            </HBox>
+         </children>
+      </VBox>
+   </right>
+</BorderPane>

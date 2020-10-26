@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+
+
+<VBox fx:id="root" alignment="CENTER" xmlns="http://javafx.com/javafx/8.0.261" xmlns:fx="http://javafx.com/fxml/1" fx:controller="gui.connectmenu.ConnectMenuController">
+   <children>
+      <Label fx:id="connectLabel" text="CONNECT" />
+      <VBox fx:id="formPane" alignment="CENTER">
+         <children>
+            <TextField fx:id="usernameField" promptText="Username" />
+            <TextField fx:id="serverNameField" promptText="Server Name" />
+            <TextField fx:id="serverPortField" promptText="Server Port" />
+         </children>
+      </VBox>
+      <HBox fx:id="buttonPane" alignment="CENTER">
+         <children>
+            <Button fx:id="hostButton" mnemonicParsing="false" onAction="#onHostButtonClicked" text="HOST" />
+            <Button fx:id="joinButton" mnemonicParsing="false" onAction="#onJoinButtonClicked" text="JOIN" />
+         </children>
+      </HBox>
+   </children>
+</VBox>

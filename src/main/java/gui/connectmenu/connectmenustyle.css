@@ -1,0 +1,42 @@
+#root {
+	-fx-background-color: #141414;
+	-fx-padding: 20;
+	-fx-spacing: 30;
+}
+
+#connectLabel {
+	-fx-text-fill: #64dd17;
+	-fx-font-size: 25;
+	-fx-font-weight: bold;
+}
+
+#formPane {
+	-fx-spacing: 20;
+}
+
+.formField {
+	-fx-text-fill: white;
+	-fx-background-color: transparent;
+	-fx-border-color: #484848;
+	-fx-border-width: 0 0 1 0;
+	-fx-font-size: 15;
+}
+
+#buttonPane {
+	-fx-spacing: 10;
+}
+
+.formButton {
+	-fx-background-color: #212121;
+	-fx-background-radius: 0;
+	-fx-border-color: #e0e0e0;
+	-fx-border-width: 2;
+	-fx-text-fill: #e0e0e0;
+	-fx-font-size: 15;
+	-fx-font-weight: bold;
+}
+
+.formButton:hover {
+	-fx-border-color: #64dd17;
+	-fx-text-fill: #64dd17;
+}

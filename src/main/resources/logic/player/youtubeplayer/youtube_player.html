@@ -1,0 +1,95 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+  <style>
+  body {
+    margin: 0;
+    overflow-x: hidden;
+    overflow-y: hidden;
+  }
+
+.iframe-container {
+}
+
+.iframe-container iframe {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  width: 100%;
+  height: 100%;
+}
+  </style>
+</head>
+
+<body>
+
+  <!-- 1. The <iframe> (and video player) will replace this <div> tag. -->
+  <div class="iframe-container">
+  <div id="player"></div>
+</div>
+
+  <script>
+  // 2. This code loads the IFrame Player API code asynchronously.
+  var tag = document.createElement('script');
+
+  tag.src = "https://www.youtube.com/iframe_api";
+  var firstScriptTag = document.getElementsByTagName('script')[0];
+  firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
+
+  // 3. This function creates an <iframe> (and YouTube player)
+  //    after the API code downloads.
+  var player;
+  function onYouTubeIframeAPIReady() {
+    player = new YT.Player('player', {
+      height: '480',
+      width: '720',
+      videoId: 'VtzvlXL9gXk',
+      playerVars: {
+        controls: 0,
+        disablekb: 1,
+      },
+      events: {
+        'onReady' : onPlayerReady,
+        'onStateChange': onPlayerStateChange,
+      }
+    });
+  }
+
+  function onPlayerReady() {
+
+  }
+
+  function getPlayer() {
+    return player;
+  }
+
+  var playedOnce = false;
+
+  function onPlayerStateChange(event) {
+    var playerState = event.data;
+    if (playerState == -1) {
+      playedOnce = false;
+      return;
+    }
+    if (playerState == 1 && playedOnce == false) {
+      playedOnce = true;
+      stateProperty.set(-1);
+      stateProperty.set(1);
+      return;
+    }
+    stateProperty.set(playerState);
+  }
+
+  function getPlayerState() {
+    return player.getPlayerState();
+  }
+
+  function dispose() {
+    player.stopVideo();
+  }
+
+  </script>
+
+</body>
+</html>

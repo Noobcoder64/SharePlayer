@@ -1,0 +1,29 @@
+#root {
+	-fx-background-color: #212121;
+}
+
+#topPane {
+	-fx-background-color: #141414;
+	-fx-padding: 5 10 5 10;
+}
+
+#usersLabel {
+	-fx-text-fill: white;
+	-fx-font-size: 25;
+	-fx-font-weight: bold;
+	-fx-border-insets: 10;
+}
+
+#userListPane {
+	-fx-padding: 10;
+	-fx-spacing: 10;
+}
+
+.userPane {
+	-fx-spacing: 14;
+}
+
+.usernameLabel {
+	-fx-text-fill: white;
+	-fx-font-size: 20;
+}
